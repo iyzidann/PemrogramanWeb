@@ -18,6 +18,12 @@
             <span id="email-error" style="color: red"></span>
             <br>
 
+            <!-- soal 7.4 -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <span id="password-error" style="color: red;"></span>
+            <br>
+
             <input type="submit" value="Submit">
         </form>
 
@@ -37,8 +43,18 @@
 
                     if (email === "") {
                         $("#email-error").text("Email harus diisi.");
+                        valid = false;
                     } else {
                         $("#email-error").text(" ");
+                    }
+
+                    // soal 7.4
+                    if (password.length < 8) {
+                        $("#password-error").text("Password minimal 8 karakter.");
+                        valid = false;
+                    } 
+                    else {
+                        $("#password-error").text("");
                     }
 
                     if (valid) {
