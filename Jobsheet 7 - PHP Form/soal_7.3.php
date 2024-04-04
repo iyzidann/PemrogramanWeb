@@ -7,7 +7,7 @@
     </head>
     <body>
         <h1>Form Input dengan Validasi</h1>
-        <form id="myForm" method="post" action="proses_validasi.php">
+        <form id="myForm" method="post" action="proses_7.3.php">
             <label for="nama">Nama:</label>
             <input type="text" id="nama" name="nama">
             <span id="nama-error" style="color: red;"></span><br>
@@ -41,7 +41,7 @@
                     if (valid) {
                         $.ajax({
                             type: "POST",
-                            url: "proses_validasi.php",
+                            url: "proses_7.3.php",
                             data: {nama: nama, email: email},
                             success: function(response) {
                                 $("#response").html(response);
