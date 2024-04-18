@@ -1,8 +1,5 @@
 <?php 
     include('./controllers/event.php');
-    include('./controllers/auth.php');
-    include('./controllers/admin.php');
-
     session_start();
 ?>
 
